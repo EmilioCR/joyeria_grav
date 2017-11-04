@@ -1,0 +1,13 @@
+.section {
+	background-color: #eaeaea;
+	width: 100%;
+}
+
+.section h1, div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.section-title {
+	vertical-align: top;
+}

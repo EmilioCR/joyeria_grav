@@ -1,0 +1,22 @@
+img {
+  width: inherit;
+  max-width: 100%;
+  height: auto;
+}
+
+.jewel-image {
+	width: 40%;
+	display: inline-block;
+}
+
+.jewel-image img{
+	width: 100%;
+}
+
+
+.jewel-details {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	line-height: 2;
+}

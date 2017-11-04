@@ -1,0 +1,21 @@
+<div class="section">
+	{{ page.content}}
+
+    {% for image in page.header.section %}
+
+        <div>
+		  <img src="{{(image.myImage|first).path}}" alt="{{page.title}}">
+        </div>
+
+        <div class="section-title">
+            <h1>{{ image.title }}</h1>
+        </div>
+
+        {% if (image.mySecondImage|first).path %}
+            <div>
+              <img src="{{(image.mySecondImage|first).path}}" alt="{{page.title}}">
+            </div>
+        {% endif %}
+        
+	{% endfor %}
+</div>

@@ -1,0 +1,36 @@
+title: Item
+@extends: 
+    type: default
+    context: blueprints://pages 
+
+form:
+  fields:
+    tabs:
+      fields:
+        item:
+          type: tab
+          title: Item
+          fields:
+            header.item:
+              name: item
+              type: list
+              label: item
+
+              fields:
+                .title:
+                  type: text
+                  label: Title
+                .description:
+                  type: textarea
+                  label: textarea
+                .price:
+                  type: text
+                  label: Price
+                .myImage:
+                  type: file
+                  label: Image
+                  destination: 'self@'
+                  limit: 1
+                  filesize: 1
+                  accept:
+                    - image/*
