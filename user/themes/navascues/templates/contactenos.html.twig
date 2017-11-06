@@ -1,0 +1,20 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<div class="about">
+	{{ page.content}}
+
+
+    <section>
+        <img src="{{(header.atencionImage|first).path}}" alt="{{page.title}}">
+        <h1>{{ header.titleAtencion }}</h1>
+        <h2>{{ header.phone }}</h2>
+    </section>
+
+    <section>
+        <img src="{{(header.contactenosImage|first).path}}" alt="{{page.title}}">
+        <h1>{{ header.titleContactenos }}</h1>
+        <h2>{{ header.mail }}</h2>
+    </section>
+</div>
+{% endblock %}

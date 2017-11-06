@@ -1,11 +1,20 @@
-title: Item
-@extends: 
-    type: default
-    context: blueprints://pages 
+title: PLUGIN_ADMIN.DEFAULT
+
+rules:
+  slug:
+    pattern: '[a-zA-Zа-яA-Я0-9_\-]+'
+    min: 1
+    max: 200
 
 form:
+  validation: loose
+
   fields:
+
     tabs:
+      type: tabs
+      active: 2
+
       fields:
         item:
           type: tab
@@ -13,20 +22,20 @@ form:
           fields:
             header.item:
               name: item
-              type: list
+              type: fieldset
               label: item
 
               fields:
-                .title:
-                  type: text
-                  label: Title
-                .description:
-                  type: textarea
-                  label: textarea
-                .price:
-                  type: text
-                  label: Price
-                .myImage:
+                header.title:
+                 type: text
+                 label: Title
+                header.description:
+                 type: textarea
+                 label: textarea
+                header.price:
+                 type: text
+                 label: Price
+                header.myJewel:
                   type: file
                   label: Image
                   destination: 'self@'
@@ -34,3 +43,66 @@ form:
                   filesize: 1
                   accept:
                     - image/*
+        options:
+          type: tab
+          title: PLUGIN_ADMIN.OPTIONS
+
+          fields:
+
+            publishing:
+              type: section
+              title: PLUGIN_ADMIN.PUBLISHING
+              underline: true
+
+              fields:
+                header.published:
+                  type: toggle
+                  toggleable: true
+                  label: PLUGIN_ADMIN.PUBLISHED
+                  help: PLUGIN_ADMIN.PUBLISHED_HELP
+                  highlight: 1
+                  size: medium
+                  options:
+                    1: PLUGIN_ADMIN.YES
+                    0: PLUGIN_ADMIN.NO
+                  validate:
+                    type: bool
+
+                header.date:
+                  type: datetime
+                  label: PLUGIN_ADMIN.DATE
+                  toggleable: true
+                  help: PLUGIN_ADMIN.DATE_HELP
+
+                header.publish_date:
+                  type: datetime
+                  label: PLUGIN_ADMIN.PUBLISHED_DATE
+                  toggleable: true
+                  help: PLUGIN_ADMIN.PUBLISHED_DATE_HELP
+
+                header.unpublish_date:
+                  type: datetime
+                  label: PLUGIN_ADMIN.UNPUBLISHED_DATE
+                  toggleable: true
+                  help: PLUGIN_ADMIN.UNPUBLISHED_DATE_HELP
+
+                header.metadata:
+                  toggleable: true
+                  type: array
+                  label: PLUGIN_ADMIN.METADATA
+                  help: PLUGIN_ADMIN.METADATA_HELP
+                  placeholder_key: PLUGIN_ADMIN.METADATA_KEY
+                  placeholder_value: PLUGIN_ADMIN.METADATA_VALUE
+
+            taxonomies:
+              type: section
+              title: PLUGIN_ADMIN.TAXONOMIES
+              underline: true
+
+              fields:
+                header.taxonomy:
+                  type: taxonomy
+                  label: PLUGIN_ADMIN.TAXONOMY
+                  multiple: true
+                  validate:
+                    type: array

@@ -13,81 +13,55 @@ form:
 
     tabs:
       type: tabs
-      active: 2
+      active: 1
 
       fields:
-
-        content:
-          fields:
-
-            header.content.items:
-              type: select
-              label: PLUGIN_ADMIN.ITEMS
-              default: '@self.modular'
-              options:
-                '@self.modular': Modular Children
-
-            header.content.order.by:
-              type: select
-              label: PLUGIN_ADMIN.ORDER_BY
-              default: date
-              options:
-                folder: PLUGIN_ADMIN.FOLDER
-                title: PLUGIN_ADMIN.TITLE
-                date: PLUGIN_ADMIN.DATE
-                default: PLUGIN_ADMIN.DEFAULT
-
-            header.content.order.dir:
-              type: select
-              label: PLUGIN_ADMIN.ORDER
-              default: desc
-              options:
-                asc: PLUGIN_ADMIN.ASCENDING
-                desc: PLUGIN_ADMIN.DESCENDING
-
-            header.process:
-              type: ignore
-            content:
-              type: ignore
-            header.media_orider:
-              type: ignore             
-
-        section:
+        about:
           type: tab
-          title: Section
+          title: About
           fields:
-            header.section_file:
-              name: section
-              type: fieldset
-              label: section
+            header.about:
+              name: About
+              type: columns
+              label: About
 
               fields:
-                header.title:
-                  type: text
-                  label: Title
-                header.page:
-                  type: pages
-                  size: medium
-                  classes: fancy
-                  label: PLUGIN_ADMIN.HOME_PAGE
-                header.myImage:
-                  type: file
-                  label: First File
-                  destination: 'self@'
-                  limit: 1
-                  filesize: 1
-                  remove: true
-                  accept:
-                    - '*'
-                header.mySecondImage:
-                  type: file
-                  label: Second File
-                  destination: 'self@'
-                  limit: 1
-                  filesize: 1
-                  accept:
-                    - '*'
-          
+                header.columnLeft:
+                 type: column
+                 label: columnLeft
+                 fields:
+                  header.atencionImage:
+                    type: file
+                    label: Image
+                    destination: 'self@'
+                    limit: 1
+                    filesize: 1
+                    accept:
+                      - image/*
+                  header.titleAtencion:
+                    type: text
+                    label: title
+                  header.phone:
+                    type: text
+                    label: phone
+                header.columnRight:
+                 type: column
+                 label: columnRight
+                 fields:
+                  header.contactenosImage:
+                    type: file
+                    label: Image
+                    destination: 'self@'
+                    limit: 1
+                    filesize: 1
+                    accept:
+                      - image/*
+                  header.titleContactenos:
+                    type: text
+                    label: title
+                  header.mail:
+                    type: text
+                    label: mail
         options:
           type: tab
           title: PLUGIN_ADMIN.OPTIONS
@@ -150,4 +124,4 @@ form:
                   label: PLUGIN_ADMIN.TAXONOMY
                   multiple: true
                   validate:
-                    type: array          
+                    type: array

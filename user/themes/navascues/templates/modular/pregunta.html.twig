@@ -1,0 +1,11 @@
+<div class="section">
+  {{ page.content}}
+    <ol>
+      {% for item in page.header.pregunta %}
+  
+          <li><h4>{{ item.title }}</h4><p>{{ item.respuesta}}</p></li>
+          
+      {% endfor %}
+    </ol>
+        
+</div>

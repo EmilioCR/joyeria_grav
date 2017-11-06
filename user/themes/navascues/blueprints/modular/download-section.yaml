@@ -56,7 +56,7 @@ form:
           type: tab
           title: Section
           fields:
-            header.section_file:
+            header.section_fi:
               name: section
               type: fieldset
               label: section
@@ -65,26 +65,13 @@ form:
                 header.title:
                   type: text
                   label: Title
-                header.page:
-                  type: pages
-                  size: medium
-                  classes: fancy
-                  label: PLUGIN_ADMIN.HOME_PAGE
-                header.myImage:
+                header.text:
+                  type: textarea
+                  label: Text
+                header.downloadFile:
                   type: file
-                  label: First File
+                  label: Upload the file
                   destination: 'self@'
-                  limit: 1
-                  filesize: 1
-                  remove: true
-                  accept:
-                    - '*'
-                header.mySecondImage:
-                  type: file
-                  label: Second File
-                  destination: 'self@'
-                  limit: 1
-                  filesize: 1
                   accept:
                     - '*'
           
