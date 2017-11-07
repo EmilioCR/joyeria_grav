@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/joyeria/user/config/system.yaml',
-    'modified' => 1510002832,
+    'modified' => 1510093291,
     'data' => [
         'absolute_urls' => false,
         'param_sep' => ':',

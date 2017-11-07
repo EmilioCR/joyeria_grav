@@ -1,0 +1,9 @@
+<section>
+    {% for jewel in page.header.jewel %}
+      <img src="{{ (jewel.jewelImage|first).path }}" alt="">
+    <div>
+        <h5>{{ jewel.jewelName }}</h5>
+        <p>Precio: {{ jewel.jewelPrice }}</p>
+    </div>
+    {% endfor %}
+</section>

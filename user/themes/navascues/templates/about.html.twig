@@ -1,0 +1,16 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<div class="about-section">
+    
+    <section class="imageVega">
+        <img src="{{(header.bgImage|first).path}}" alt="">
+    </section>
+
+    <section class="infoVega">
+        <h1>{{ header.title }}</h1>
+        <p class="about-vega">{{ header.description }}</p>
+    </section>
+
+</div>
+{% endblock %}

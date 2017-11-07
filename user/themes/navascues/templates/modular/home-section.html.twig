@@ -1,0 +1,17 @@
+<div class="section">
+	{{ page.content}}
+
+    <div>
+	  <img src="{{(header.leftImage|first).path}}" alt="{{page.title}}">
+    </div>  
+
+    <h1>{{ page.header.sectionTitle }}</h1>
+    <a href="{{base_url}}{{header.redirectPage}}">Ver más</a>
+
+    {% if (page.header.rightImage|first).path %}
+        <div>
+          <img src="{{(header.rightImage|first).path}}" alt="{{page.title}}">
+        </div>
+    {% endif %}
+        
+</div>
