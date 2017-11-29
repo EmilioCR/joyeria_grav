@@ -82,6 +82,6 @@ class __TwigTemplate_abe7c199d572fb90dec4e6740c744caabdb404b67b7daa4ebf3659e76bf
         return new Twig_Source("{% for meta in page.metadata %}
 <meta {% if meta.name %}name=\"{{ meta.name }}\" {% endif %}{% if meta.http_equiv %}http-equiv=\"{{ meta.http_equiv }}\" {% endif %}{% if meta.charset %}charset=\"{{ meta.charset }}\" {% endif %}{% if meta.property %}property=\"{{ meta.property }}\" {% endif %}{% if meta.content %}content=\"{{ meta.content }}\" {% endif %}/>
 {% endfor %}
-", "partials/metadata.html.twig", "/Applications/MAMP/htdocs/joyeria/user/themes/navascues/templates/partials/metadata.html.twig");
+", "partials/metadata.html.twig", "/Applications/MAMP/htdocs/nandagrav/user/themes/navascues/templates/partials/metadata.html.twig");
     }
 }

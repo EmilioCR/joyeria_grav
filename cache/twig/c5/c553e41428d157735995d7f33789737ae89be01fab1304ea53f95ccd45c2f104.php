@@ -45,6 +45,6 @@ class __TwigTemplate_d4a596f1e19fbeec10718468356c44eba498d1fe702f11c85c227010628
         return new Twig_Source("<button class=\"lines-button x\" type=\"button\" role=\"button\" aria-label=\"Toggle Navigation\" data-sidebar-mobile-toggle>
     <span class=\"lines\"></span>
 </button>
-", "partials/nav-toggle.html.twig", "/Applications/MAMP/htdocs/joyeria/user/plugins/admin/themes/grav/templates/partials/nav-toggle.html.twig");
+", "partials/nav-toggle.html.twig", "/Applications/MAMP/htdocs/nandagrav/user/plugins/admin/themes/grav/templates/partials/nav-toggle.html.twig");
     }
 }

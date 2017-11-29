@@ -81,6 +81,6 @@ class __TwigTemplate_11d4d134bd78757d98a79c465827e2006061c4f1ae50e8fed039ed0e128
 
 {% include 'partials/javascripts-extra.html.twig' ignore missing %}
 {% endif %}
-", "partials/javascripts.html.twig", "/Applications/MAMP/htdocs/joyeria/user/plugins/admin/themes/grav/templates/partials/javascripts.html.twig");
+", "partials/javascripts.html.twig", "/Applications/MAMP/htdocs/nandagrav/user/plugins/admin/themes/grav/templates/partials/javascripts.html.twig");
     }
 }

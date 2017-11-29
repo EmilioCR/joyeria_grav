@@ -55,45 +55,27 @@ class __TwigTemplate_736f311d422ef29f0d916dfa78dfd4b5382b6b7a0b500d34cd56f9690ff
         echo "    ";
         $this->displayParentBlock("bottom", $context, $blocks);
         echo "
-    ";
-        // line 16
-        if (($context["show_onpage_menu"] ?? null)) {
-            // line 17
-            echo "        <script>
-        // singlePageNav initialization & configuration
-        \$('#navbar').singlePageNav({
-            offset: \$('#header').outerHeight(),
-            filter: ':not(.external)',
-            updateHash: true,
-            currentClass: 'active'
-        });
-        </script>
-    ";
-        }
+";
     }
 
-    // line 29
+    // line 17
     public function block_content($context, array $blocks = array())
     {
-        // line 30
+        // line 18
         echo "    ";
         echo $this->getAttribute(($context["page"] ?? null), "content", array());
         echo "
-    <h1>";
-        // line 31
-        echo $this->getAttribute(($context["page"] ?? null), "title", array());
-        echo "</h1>
     ";
-        // line 32
+        // line 19
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["page"] ?? null), "collection", array(), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["module"]) {
-            // line 33
+            // line 20
             echo "        <div id=\"";
             echo $this->getAttribute($this, "pageLinkName", array(0 => $this->getAttribute($context["module"], "menu", array())), "method");
             echo "\"></div>
         ";
-            // line 34
+            // line 21
             echo $this->getAttribute($context["module"], "content", array());
             echo "
     ";
@@ -141,7 +123,7 @@ class __TwigTemplate_736f311d422ef29f0d916dfa78dfd4b5382b6b7a0b500d34cd56f9690ff
 
     public function getDebugInfo()
     {
-        return array (  107 => 4,  97 => 34,  92 => 33,  88 => 32,  84 => 31,  79 => 30,  76 => 29,  62 => 17,  60 => 16,  55 => 15,  52 => 14,  45 => 10,  42 => 9,  39 => 8,  36 => 7,  33 => 6,  29 => 1,  27 => 3,  11 => 1,);
+        return array (  89 => 4,  79 => 21,  74 => 20,  70 => 19,  65 => 18,  62 => 17,  55 => 15,  52 => 14,  45 => 10,  42 => 9,  39 => 8,  36 => 7,  33 => 6,  29 => 1,  27 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -169,27 +151,14 @@ class __TwigTemplate_736f311d422ef29f0d916dfa78dfd4b5382b6b7a0b500d34cd56f9690ff
 
 {% block bottom %}
     {{ parent() }}
-    {% if show_onpage_menu %}
-        <script>
-        // singlePageNav initialization & configuration
-        \$('#navbar').singlePageNav({
-            offset: \$('#header').outerHeight(),
-            filter: ':not(.external)',
-            updateHash: true,
-            currentClass: 'active'
-        });
-        </script>
-    {% endif %}
 {% endblock %}
-
 {% block content %}
     {{ page.content }}
-    <h1>{{page.title}}</h1>
     {% for module in page.collection() %}
         <div id=\"{{ _self.pageLinkName(module.menu) }}\"></div>
         {{ module.content }}
     {% endfor %}
 {% endblock %}
-", "modular.html.twig", "/Applications/MAMP/htdocs/joyeria/user/themes/navascues/templates/modular.html.twig");
+", "modular.html.twig", "/Applications/MAMP/htdocs/nandagrav/user/themes/navascues/templates/modular.html.twig");
     }
 }

@@ -49,6 +49,6 @@ class __TwigTemplate_1f584685322686f0739133b56818bc4b9223c199ecc4f6d45f4cd2b81e7
     public function getSourceContext()
     {
         return new Twig_Source("{% extends 'partials/base-root.html.twig' %}
-", "partials/base.html.twig", "/Applications/MAMP/htdocs/joyeria/user/plugins/admin/themes/grav/templates/partials/base.html.twig");
+", "partials/base.html.twig", "/Applications/MAMP/htdocs/nandagrav/user/plugins/admin/themes/grav/templates/partials/base.html.twig");
     }
 }

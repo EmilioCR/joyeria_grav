@@ -142,6 +142,6 @@ class __TwigTemplate_0c9b77ed71e7e9ceec051de79b41ef926235afce53c56696e77ae35036c
     {% endfor %}
     </ul>
 {% endif %}
-", "partials/nav-quick-tray.html.twig", "/Applications/MAMP/htdocs/joyeria/user/plugins/admin/themes/grav/templates/partials/nav-quick-tray.html.twig");
+", "partials/nav-quick-tray.html.twig", "/Applications/MAMP/htdocs/nandagrav/user/plugins/admin/themes/grav/templates/partials/nav-quick-tray.html.twig");
     }
 }

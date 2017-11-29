@@ -278,6 +278,6 @@ class __TwigTemplate_119d8205e057f082f9beba91fea1245f65b6c77ba20a96e352d3dd84c9b
     </div>
 {% endblock %}
 
-", "forms/fields/pages/pages.html.twig", "/Applications/MAMP/htdocs/joyeria/user/plugins/admin/themes/grav/templates/forms/fields/pages/pages.html.twig");
+", "forms/fields/pages/pages.html.twig", "/Applications/MAMP/htdocs/nandagrav/user/plugins/admin/themes/grav/templates/forms/fields/pages/pages.html.twig");
     }
 }

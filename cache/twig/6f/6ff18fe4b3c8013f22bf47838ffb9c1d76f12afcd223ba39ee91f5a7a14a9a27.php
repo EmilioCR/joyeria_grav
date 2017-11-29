@@ -511,6 +511,6 @@ class __TwigTemplate_a28018da8c65a592f39f7197707e1b9f49836dfdc7226418af991225db3
     {% endblock body %}
     </html>
 {% endif %}
-", "partials/base-root.html.twig", "/Applications/MAMP/htdocs/joyeria/user/plugins/admin/themes/grav/templates/partials/base-root.html.twig");
+", "partials/base-root.html.twig", "/Applications/MAMP/htdocs/nandagrav/user/plugins/admin/themes/grav/templates/partials/base-root.html.twig");
     }
 }

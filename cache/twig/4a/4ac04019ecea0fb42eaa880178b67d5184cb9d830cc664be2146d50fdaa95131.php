@@ -103,6 +103,6 @@ class __TwigTemplate_db3c06ec0e43be7aef037d240f5a82b62323b01b49d6c824ff3dd07e4a5
         <div class=\"{{ message.scope|e }} alert\">{{ message.message|raw }}</div>
     {%- endfor -%}
 </div>
-", "partials/messages.html.twig", "/Applications/MAMP/htdocs/joyeria/user/plugins/admin/themes/grav/templates/partials/messages.html.twig");
+", "partials/messages.html.twig", "/Applications/MAMP/htdocs/nandagrav/user/plugins/admin/themes/grav/templates/partials/messages.html.twig");
     }
 }

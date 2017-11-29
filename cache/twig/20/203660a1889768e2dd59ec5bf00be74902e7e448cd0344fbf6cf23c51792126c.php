@@ -206,6 +206,6 @@ class __TwigTemplate_a32a8dca5774d302e877a7f2bdee7f0f0fb1b066b86114290ee22d7bfb2
 
     {{ nonce_field('admin-form', 'admin-nonce')|raw }}
 </form>
-", "partials/blueprints.html.twig", "/Applications/MAMP/htdocs/joyeria/user/plugins/admin/themes/grav/templates/partials/blueprints.html.twig");
+", "partials/blueprints.html.twig", "/Applications/MAMP/htdocs/nandagrav/user/plugins/admin/themes/grav/templates/partials/blueprints.html.twig");
     }
 }

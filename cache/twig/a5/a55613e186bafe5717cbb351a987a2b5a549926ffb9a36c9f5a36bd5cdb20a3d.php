@@ -56,6 +56,6 @@ class __TwigTemplate_65aa3a6d2a733661d04b95ba80e812b5b38cf4e741a3601d78947835dd7
         return new Twig_Source("{% set value = (value is null ? (field.evaluate ? evaluate(field.default) : field.default) : value) %}
 
 <input data-grav-field=\"hidden\" data-grav-disabled=\"false\" type=\"hidden\" class=\"input\" name=\"{{ (scope ~ field.name)|fieldName }}\" value=\"{{ value|join(', ') }}\" />
-", "forms/fields/hidden/hidden.html.twig", "/Applications/MAMP/htdocs/joyeria/user/plugins/form/templates/forms/fields/hidden/hidden.html.twig");
+", "forms/fields/hidden/hidden.html.twig", "/Applications/MAMP/htdocs/nandagrav/user/plugins/form/templates/forms/fields/hidden/hidden.html.twig");
     }
 }

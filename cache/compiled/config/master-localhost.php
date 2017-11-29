@@ -1,85 +1,137 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1510093292,
-    'checksum' => 'fbf971f4156c6bcfaa65dc8a3cf9c4cf',
+    'timestamp' => 1511974127,
+    'checksum' => '037fc47f8cbba557792da0f8878a2040',
     'files' => [
         'user/config' => [
+            'groups' => [
+                'file' => 'user/config/groups.yaml',
+                'modified' => 1510604365
+            ],
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1509380011
+                'modified' => 1509388779
             ],
-            'plugins/devtools' => [
-                'file' => 'user/config/plugins/devtools.yaml',
-                'modified' => 1509567355
+            'plugins/admin' => [
+                'file' => 'user/config/plugins/admin.yaml',
+                'modified' => 1510421710
+            ],
+            'plugins/admin-addon-user-manager' => [
+                'file' => 'user/config/plugins/admin-addon-user-manager.yaml',
+                'modified' => 1510421932
+            ],
+            'plugins/langswitcher' => [
+                'file' => 'user/config/plugins/langswitcher.yaml',
+                'modified' => 1510592133
+            ],
+            'plugins/language-selector' => [
+                'file' => 'user/config/plugins/language-selector.yaml',
+                'modified' => 1510608387
+            ],
+            'plugins/pagination' => [
+                'file' => 'user/config/plugins/pagination.yaml',
+                'modified' => 1510421963
+            ],
+            'plugins/tinymce-editor' => [
+                'file' => 'user/config/plugins/tinymce-editor.yaml',
+                'modified' => 1509408950
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1509380010
+                'modified' => 1509388778
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1509382060
+                'modified' => 1510693211
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1509380011
+                'modified' => 1509388779
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1510093291
+                'modified' => 1511969058
+            ],
+            'themes/antimatter' => [
+                'file' => 'user/config/themes/antimatter.yaml',
+                'modified' => 1509567559
+            ],
+            'themes/navascues' => [
+                'file' => 'user/config/themes/navascues.yaml',
+                'modified' => 1509567597
+            ],
+            'themes/vega-navascues' => [
+                'file' => 'user/config/themes/vega-navascues.yaml',
+                'modified' => 1509393208
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1509395428
+                'modified' => 1509112590
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1509395428
+                'modified' => 1509112590
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1509395428
+                'modified' => 1509112590
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1509395428
+                'modified' => 1511385079
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1509395566
+                'modified' => 1509112590
+            ],
+            'plugins/admin-addon-user-manager' => [
+                'file' => 'user/plugins/admin-addon-user-manager/admin-addon-user-manager.yaml',
+                'modified' => 1510599560
             ],
             'plugins/devtools' => [
                 'file' => 'user/plugins/devtools/devtools.yaml',
-                'modified' => 1509380195
+                'modified' => 1509398779
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1509395557
+                'modified' => 1509112590
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1504814950
+                'modified' => 1509112590
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1509395553
+                'modified' => 1509112590
+            ],
+            'plugins/langswitcher' => [
+                'file' => 'user/plugins/langswitcher/langswitcher.yaml',
+                'modified' => 1510592116
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1509395577
+                'modified' => 1509112590
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1504814950
+                'modified' => 1509112590
+            ],
+            'plugins/pagination' => [
+                'file' => 'user/plugins/pagination/pagination.yaml',
+                'modified' => 1510421956
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1504814950
+                'modified' => 1509112590
+            ],
+            'plugins/tinymce-editor' => [
+                'file' => 'user/plugins/tinymce-editor/tinymce-editor.yaml',
+                'modified' => 1510608490
             ]
         ]
     ],
@@ -137,10 +189,17 @@ return [
                         1 => '/modular'
                     ],
                     'history' => [
-                        'daily' => 30,
-                        'monthly' => 12,
-                        'visitors' => 20
+                        'daily' => '30',
+                        'monthly' => '12',
+                        'visitors' => '20'
                     ]
+                ]
+            ],
+            'admin-addon-user-manager' => [
+                'enabled' => true,
+                'default_list_style' => 'list',
+                'pagination' => [
+                    'per_page' => '20'
                 ]
             ],
             'devtools' => [
@@ -189,6 +248,11 @@ return [
                         0 => 'image/*'
                     ]
                 ]
+            ],
+            'langswitcher' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'untranslated_pages_behavior' => 'none'
             ],
             'login' => [
                 'enabled' => true,
@@ -247,9 +311,101 @@ return [
                     3 => 'green'
                 ]
             ],
+            'pagination' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'delta' => 0
+            ],
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'tinymce-editor' => [
+                'enabled' => false,
+                'apikey' => '',
+                'plugins' => [
+                    0 => 'advlist',
+                    1 => 'anchor',
+                    2 => 'charmap',
+                    3 => 'code',
+                    4 => 'colorpicker',
+                    5 => 'emoticons',
+                    6 => 'fullscreen',
+                    7 => 'hr',
+                    8 => 'image',
+                    9 => 'insertdatetime',
+                    10 => 'link',
+                    11 => 'lists',
+                    12 => 'media',
+                    13 => 'nonbreaking',
+                    14 => 'pagebreak',
+                    15 => 'paste',
+                    16 => 'print',
+                    17 => 'searchreplace',
+                    18 => 'table',
+                    19 => 'textcolor',
+                    20 => 'toc',
+                    21 => 'visualchars',
+                    22 => 'wordcount'
+                ],
+                'parameters' => [
+                    0 => [
+                        'name' => 'fontsize_formats',
+                        'value' => '6pt 7pt 8pt 9pt 10pt 11pt 12pt 13pt 14pt 15pt 16pt 18pt 20pt 22pt 24pt 26pt 28pt 32pt 36pt 40pt 44pt 48pt 54pt 60pt 66pt 72pt 80pt 88pt 96pt'
+                    ],
+                    1 => [
+                        'name' => 'paste_data_images',
+                        'value' => '1'
+                    ]
+                ],
+                'menubar' => true,
+                'menu' => [
+                    0 => [
+                        'title' => 'File',
+                        'items' => 'newdocument print'
+                    ],
+                    1 => [
+                        'title' => 'Edit',
+                        'items' => 'undo redo | cut copy paste pastetext | selectall | searchreplace'
+                    ],
+                    2 => [
+                        'title' => 'Insert',
+                        'items' => 'media link image | pagebreak charmap anchor hr insertdatetime nonbreaking toc'
+                    ],
+                    3 => [
+                        'title' => 'View',
+                        'items' => 'visualchars visualaid | fullscreen'
+                    ],
+                    4 => [
+                        'title' => 'Format',
+                        'items' => 'bold italic underline strikethrough superscript subscript | formats | removeformat'
+                    ],
+                    5 => [
+                        'title' => 'Table',
+                        'items' => 'inserttable tableprops deletetable | cell row column'
+                    ],
+                    6 => [
+                        'title' => 'Tools',
+                        'items' => 'code'
+                    ]
+                ],
+                'toolbar' => [
+                    0 => [
+                        'row' => 'newdocument print | cut copy paste | undo redo | searchreplace visualchars | table image media emoticons toc | insertdatetime pagebreak charmap | link unlink anchor | blockquote nonbreaking hr | code'
+                    ],
+                    1 => [
+                        'row' => 'formatselect | fontselect fontsizeselect | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | indent outdent | forecolor backcolor | bullist numlist | superscript subscript | removeformat | fullscreen'
+                    ]
+                ],
+                'branding' => false,
+                'statusbar' => true
+            ],
+            'language-selector' => [
+                'enabled' => false,
+                'built_in_css' => true,
+                'untranslated_pages_behavior' => 'none',
+                'button_display' => 'default',
+                'select_display' => 'default'
             ]
         ],
         'media' => [
@@ -519,11 +675,11 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Joyeria',
+            'title' => 'Vega Navascues',
             'default_lang' => 'en',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@test.com'
+                'name' => 'Team Navascues',
+                'email' => 'veganavascues@gmail.com'
             ],
             'taxonomies' => [
                 0 => 'category',
@@ -580,17 +736,18 @@ return [
             'pwd_regex' => '(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}',
             'languages' => [
                 'supported' => [
-                    
+                    0 => 'es',
+                    1 => 'en'
                 ],
                 'include_default_lang' => true,
                 'translations' => true,
                 'translations_fallback' => true,
                 'session_store_active' => false,
                 'http_accept_language' => false,
-                'override_locale' => false
+                'override_locale' => true
             ],
             'home' => [
-                'alias' => '/modular',
+                'alias' => '/home',
                 'hide_in_urls' => false
             ],
             'pages' => [
@@ -613,7 +770,7 @@ return [
                     'twig' => false
                 ],
                 'twig_first' => false,
-                'never_cache_twig' => false,
+                'never_cache_twig' => true,
                 'events' => [
                     'page' => true,
                     'twig' => true
@@ -643,7 +800,7 @@ return [
                 'last_modified' => false,
                 'etag' => false,
                 'vary_accept_encoding' => false,
-                'redirect_default_route' => false,
+                'redirect_default_route' => true,
                 'redirect_default_code' => '302',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
@@ -750,8 +907,92 @@ return [
                 'official_gpm_only' => true
             ]
         ],
+        'groups' => [
+            'registered' => [
+                'icon' => 'users',
+                'readableName' => 'registered Users',
+                'description' => 'The group of registered users',
+                'access' => [
+                    'site' => [
+                        'login' => 'true'
+                    ]
+                ]
+            ],
+            'clients' => [
+                'readableName' => 'Clients',
+                'description' => 'Defaut Clients Access',
+                'icon' => 'money',
+                'access' => [
+                    'admin' => [
+                        'login' => 'true',
+                        'pages' => 'true',
+                        'stats' => 'true',
+                        'cache' => 'true',
+                        'configuration' => 'true',
+                        'backup' => 'true',
+                        'email' => 'true',
+                        'maintenance' => 'true'
+                    ],
+                    'site' => [
+                        'login' => 'true'
+                    ]
+                ]
+            ],
+            'administrators' => [
+                'groupname' => 'administrators',
+                'readableName' => 'Administrators',
+                'description' => 'team VegaNavascues',
+                'icon' => 'child',
+                'access' => [
+                    'admin' => [
+                        'super' => 'true',
+                        'login' => 'true',
+                        'cache' => 'true',
+                        'configuration' => 'true',
+                        'configuration_system' => 'true',
+                        'configuration_site' => 'true',
+                        'configuration_media' => 'true',
+                        'configuration_info' => 'true',
+                        'settings' => 'true',
+                        'pages' => 'true',
+                        'maintenance' => 'true',
+                        'plugins' => 'true',
+                        'themes' => 'true',
+                        'users' => 'true',
+                        'configuratio_info' => 'true',
+                        'stats' => 'true'
+                    ],
+                    'admin-addon-user-manager' => [
+                        
+                    ],
+                    'site' => [
+                        'login' => 'true'
+                    ]
+                ]
+            ]
+        ],
         'security' => [
-            'salt' => 'b8OvlfYrw3Kt65'
+            'salt' => 'AtpiNZgfJc8xIl'
+        ],
+        'themes' => [
+            'antimatter' => [
+                'enabled' => true,
+                'dropdown' => [
+                    'enabled' => true
+                ]
+            ],
+            'navascues' => [
+                'enabled' => true,
+                'dropdown' => [
+                    'enabled' => true
+                ]
+            ],
+            'vega-navascues' => [
+                'enabled' => true,
+                'dropdown' => [
+                    'enabled' => true
+                ]
+            ]
         ]
     ]
 ];

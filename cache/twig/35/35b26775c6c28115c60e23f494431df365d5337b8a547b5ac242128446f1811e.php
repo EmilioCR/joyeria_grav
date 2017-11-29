@@ -126,11 +126,11 @@ class __TwigTemplate_deb548995e240ad009a06857cbbbcf941320c645676ae4fbcc11d7be495
                     echo "            <li class=\"has-children ";
                     echo ($context["current_page"] ?? null);
                     echo "\">
-                <a href=\"";
+                <!-- <a href=\"";
                     // line 6
                     echo $this->getAttribute($context["p"], "url", array());
                     echo "\">
-                    ";
+ -->                    ";
                     // line 7
                     if ($this->getAttribute($this->getAttribute($context["p"], "header", array()), "icon", array())) {
                         echo "<i class=\"fa fa-";
@@ -141,7 +141,7 @@ class __TwigTemplate_deb548995e240ad009a06857cbbbcf941320c645676ae4fbcc11d7be495
                     echo "                    ";
                     echo $this->getAttribute($context["p"], "menu", array());
                     echo "
-                </a>
+               <!--  </a> -->
                 <ul>
                     ";
                     // line 11
@@ -223,10 +223,10 @@ class __TwigTemplate_deb548995e240ad009a06857cbbbcf941320c645676ae4fbcc11d7be495
         {% set current_page = (p.active or p.activeChild) ? 'selected' : '' %}
         {% if p.children.visible.count > 0 %}
             <li class=\"has-children {{ current_page }}\">
-                <a href=\"{{ p.url }}\">
-                    {% if p.header.icon %}<i class=\"fa fa-{{ p.header.icon }}\"></i>{% endif %}
+                <!-- <a href=\"{{ p.url }}\">
+ -->                    {% if p.header.icon %}<i class=\"fa fa-{{ p.header.icon }}\"></i>{% endif %}
                     {{ p.menu }}
-                </a>
+               <!--  </a> -->
                 <ul>
                     {{ _self.loop(p) }}
                 </ul>
@@ -266,6 +266,6 @@ class __TwigTemplate_deb548995e240ad009a06857cbbbcf941320c645676ae4fbcc11d7be495
     {% endfor %}
 </ul>
 
-", "partials/navigation.html.twig", "/Applications/MAMP/htdocs/joyeria/user/themes/navascues/templates/partials/navigation.html.twig");
+", "partials/navigation.html.twig", "/Applications/MAMP/htdocs/nandagrav/user/themes/navascues/templates/partials/navigation.html.twig");
     }
 }
