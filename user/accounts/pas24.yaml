@@ -1,0 +1,31 @@
+state: enabled
+email: pasosegueda@gmail.com
+fullname: 'Isabel Osegueda'
+title: administrador
+language: en
+twofa_enabled: false
+twofa_secret: OA5NRUWZKDHFODVCE3PW5FJ6Z55WXLJF
+groups:
+  - administrators
+access:
+  admin:
+    super: 'true'
+    login: 'true'
+    cache: 'true'
+    configuration: 'true'
+    configuration_system: 'true'
+    configuration_site: 'true'
+    configuration_media: 'true'
+    configuration_info: 'true'
+    settings: 'true'
+    pages: 'true'
+    maintenance: 'true'
+    statistics: 'true'
+    plugins: 'true'
+    themes: 'true'
+    users: 'true'
+  admin-addon-user-manager:
+    users: 'true'
+    groups: 'true'
+    users_expert: 'true'
+hashed_password: $2y$10$MC2RBVV/QI3nusTFgVo9MOo.ec5et37Fhv5vGCTeU70zTyZgdkKoy

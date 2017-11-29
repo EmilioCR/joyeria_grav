@@ -17,8 +17,8 @@
         {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %}
         {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
         {% do assets.addCss('theme://css/custom.css', 98) %}
-        {% do assets.addCss('theme://css/items.css', 97) %}
-        {% do assets.addCss('theme://css/section-modular.css', 96) %}
+        {% do assets.addCss('theme://css/aboutUs.css', 97) %}
+        {% do assets.addCss('theme://css-compiled/styles.css', 96) %}
     {% endblock %}
     {{ assets.css() }}
 
@@ -26,7 +26,7 @@
         {% do assets.addJs('jquery', 100) %}
     {% endblock %}
     {{ assets.js() }}
-
+    {% include 'partials/langswitcher.html.twig' %}
 {% endblock head%}
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
@@ -36,6 +36,7 @@
         <div class="wrapper padding">
             <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">
                 <i class="fa fa-rebel"></i>
+                {{ config.site.title }}
             </a>
             {% block header_navigation %}
             <nav class="main-nav">

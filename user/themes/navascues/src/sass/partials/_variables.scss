@@ -1,0 +1,31 @@
+// Font Family
+$font-family-base:'libre_caslon_textregular', sans-serif;
+$font-family-contrast:'bodoni_sans_displayregular', serif;
+
+// Fonts Family Variables
+$font-family-base-regular: 400;
+$font-family-contrast-regular: 400;
+
+// Main Colors
+$c-lightgreen: #81D8D0;
+$c-pink: #F3C4D0;
+$c-lighgray: #eaeaea;
+
+// Fonts inside of proyect
+@font-face {
+    font-family: $font-family-base;
+    src: url('../../fonts/librecaslontext-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/librecaslontext-regular-webfont.woff') format('woff');
+    font-weight: $font-family-base-regular;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: $font-family-contrast;
+    src: url('../../fonts/bodonisansdisplay-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/bodonisansdisplay-regular-webfont.woff') format('woff');
+    font-weight: $font-family-contrast-regular;
+    font-style: normal;
+
+}

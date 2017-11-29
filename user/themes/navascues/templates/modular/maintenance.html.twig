@@ -1,12 +1,17 @@
 <section>
-    <h1>Cuidado de las piezas</h1>
+	{% if grav.language.getActive == 'es' %}
+		<h1>Cuidado de las piezas</h1>
+    {% endif %}
+    {% if grav.language.getActive == 'en' %}
+		<h1>Care of the pieces</h1>
+    {% endif %}
 </section>
 <section>
     {% for maintenance in page.header.maintenance %}
-    <img src="{{ (maintenance.icon|first).path }}" alt="">
-    <div>
-        <h2>{{maintenance.subtitle }}</h2>
-        <p>{{ maintenance.description }}</p>
-    </div>
+        <img src="{{ url(maintenance.icon|keys|first) }}" alt="">
+        <div>
+            <h2>{{maintenance.subtitle }}</h2>
+            <p>{{ maintenance.description }}</p>
+        </div>
     {% endfor %}
 </section>

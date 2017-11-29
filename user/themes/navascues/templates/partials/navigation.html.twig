@@ -3,10 +3,10 @@
         {% set current_page = (p.active or p.activeChild) ? 'selected' : '' %}
         {% if p.children.visible.count > 0 %}
             <li class="has-children {{ current_page }}">
-                <a href="{{ p.url }}">
-                    {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
+                <!-- <a href="{{ p.url }}">
+ -->                    {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
                     {{ p.menu }}
-                </a>
+               <!--  </a> -->
                 <ul>
                     {{ _self.loop(p) }}
                 </ul>

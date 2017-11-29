@@ -1,15 +1,15 @@
 name: Navascues
 version: 0.1.0
-description: Tema de Joyeria Navascues
+description: jewelry WebSite
 icon: rebel
 author:
-  name: Emilio Calderon
-  email: emiliocf2096@gmail.com
-homepage: https://github.com/emilio-calderon/grav-theme-navascues
+  name: Fernanda FT
+  email: fernandafajardot@gmail.com
+homepage: https://github.com/fernanda-ft/grav-theme-navascues
 demo: http://demo.yoursite.com
 keywords: grav, theme, etc
-bugs: https://github.com/emilio-calderon/grav-theme-navascues/issues
-readme: https://github.com/emilio-calderon/grav-theme-navascues/blob/develop/README.md
+bugs: https://github.com/fernanda-ft/grav-theme-navascues/issues
+readme: https://github.com/fernanda-ft/grav-theme-navascues/blob/develop/README.md
 license: MIT
 
 form:

@@ -4,7 +4,7 @@
 <div class="about-section">
     
     <section class="imageVega">
-        <img src="{{(header.bgImage|first).path}}" alt="">
+    	<img src="{{ url(page.header.bgImage|keys|first) }}" alt="">
     </section>
 
     <section class="infoVega">

@@ -1,0 +1,26 @@
+{% embed 'partials/base.html.twig' %}
+	{% set collection = page.collection() %}
+	
+	{% block content %}
+
+		<div class="section-pattern section-pattern-lightgray">
+			<div class="discover-category">
+				<h1>{{ page.header.page_title }}</h1>
+			</div>
+		</div>
+
+			
+		<div class="wrapper-categories">
+			<div id="listing">
+				<ul class="holder">
+					{% for child in collection %}
+						<li>
+			        		{% include 'jewel-node.html.twig' with {'category':page, 'page':child, 'truncate':true} %}
+			    		</li>
+			  		{% endfor %}
+			  	</ul>
+			</div>
+		</div>
+	{% endblock %}
+
+{% endembed %}

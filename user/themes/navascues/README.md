@@ -4,4 +4,4 @@ The **Navascues** Theme is for [Grav CMS](http://github.com/getgrav/grav).  This
 
 ## Description
 
-Tema de Joyeria Navascues
+jewelry

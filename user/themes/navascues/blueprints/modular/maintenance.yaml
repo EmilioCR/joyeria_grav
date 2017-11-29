@@ -56,6 +56,9 @@ form:
           type: tab
           title: Jewel maintenance
           fields:
+            header.title:
+                     type: text
+                     label: Title Page
             header.maintenance:
               name: Maintenance
               type: list

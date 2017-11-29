@@ -9,9 +9,8 @@
 
 body {
     font-size: 1rem;
-    color: #606d6e;
 }
-
+/*
 h1,
 h2,
 h3,
@@ -19,16 +18,16 @@ h4,
 h5,
 h6 {
     color: #454B4D;
-}
+}*/
 
 a {
-    color: #1F8CD6;
+    color: #000;
     text-decoration: none;
 }
 
-a:hover {
-    color: #175E91;
-}
+/*a:hover {
+    color: #eaeaea;
+}*/
 
 pre {
     background: #F0F0F0;
@@ -134,7 +133,7 @@ blockquote {
 
 .main-nav ul li ul {
     position: absolute;
-    background-color: #1F8DD6;
+    background-color: #eaeaea;
     min-width: 100%;
     text-align: left;
     z-index: 999;

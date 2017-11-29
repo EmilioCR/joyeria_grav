@@ -1,9 +1,15 @@
 <section>
     {% for jewel in page.header.jewel %}
-      <img src="{{ (jewel.jewelImage|first).path }}" alt="">
+        <img src="{{base_url}}/{{ (jewel.jewelImage|first).path }}" alt="{{ page.title}}">
     <div>
         <h5>{{ jewel.jewelName }}</h5>
-        <p>Precio: {{ jewel.jewelPrice }}</p>
+        {% if grav.language.getActive == 'es' %}
+			<p>Precio: {{ jewel.jewelPrice }}</p>
+    	{% endif %}
+        {% if grav.language.getActive == 'en' %}
+			<p>Price: {{ jewel.jewelPrice }}</p>
+    	{% endif %}
+
     </div>
     {% endfor %}
 </section>

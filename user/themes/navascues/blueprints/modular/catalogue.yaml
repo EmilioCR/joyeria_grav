@@ -137,4 +137,4 @@ form:
                   label: PLUGIN_ADMIN.TAXONOMY
                   multiple: true
                   validate:
-                    type: array          
+                    type: array  

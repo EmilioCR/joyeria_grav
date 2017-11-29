@@ -16,6 +16,7 @@ form:
       active: 1
 
       fields:
+
         about:
           type: tab
           title: AboutUs
@@ -32,7 +33,7 @@ form:
                   fields:
                     header.title:
                      type: text
-                     label: Name
+                     label: title
                     header.description:
                      type: textarea
                      label: Description
@@ -108,3 +109,68 @@ form:
                   multiple: true
                   validate:
                     type: array
+        advanced:
+          type: tab
+          title: PLUGIN_ADMIN.ADVANCED
+
+          fields:
+            columns:
+              type: columns
+              fields:
+                column1:
+                  type: column
+                  fields:
+
+                    settings:
+                      type: section
+                      title: PLUGIN_ADMIN.SETTINGS
+                      underline: true
+
+                    folder:
+                      type: text
+                      label: PLUGIN_ADMIN.FOLDER_NAME
+                      validate:
+                        rule: slug
+
+                    route:
+                      type: parents
+                      label: PLUGIN_ADMIN.PARENT
+                      classes: fancy
+
+                    name:
+                      type: select
+                      classes: fancy
+                      label: PLUGIN_ADMIN.PAGE_FILE
+                      help: PLUGIN_ADMIN.PAGE_FILE_HELP
+                      default: default
+                      data-options@: '\Grav\Common\Page\Pages::pageTypes'
+
+                    header.body_classes:
+                      type: text
+                      label: PLUGIN_ADMIN.BODY_CLASSES
+
+
+                column2:
+                  type: column
+
+                  fields:
+                    order_title:
+                      type: section
+                      title: PLUGIN_ADMIN.ORDERING
+                      underline: true
+
+                    ordering:
+                      type: toggle
+                      label: PLUGIN_ADMIN.FOLDER_NUMERIC_PREFIX
+                      help: PLUGIN_ADMIN.FOLDER_NUMERIC_PREFIX_HELP
+                      highlight: 1
+                      options:
+                        1: PLUGIN_ADMIN.ENABLED
+                        0: PLUGIN_ADMIN.DISABLED
+                      validate:
+                        type: bool
+
+                    order:
+                      type: order
+                      label: PLUGIN_ADMIN.SORTABLE_PAGES
+                      sitemap:

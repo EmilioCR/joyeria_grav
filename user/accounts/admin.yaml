@@ -1,0 +1,14 @@
+email: nanda199784@gmail.com
+fullname: 'Fernanda FT'
+title: administrador
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$EpKFXjZ11iQRDxp1/peJI./WhQDXEvSM3.cNbglxwv1wPh0IjI93q
+language: en
+login_attempts: {  }
+twofa_secret: E7IGI3E4KMJ5NHSTTFXMXS7AODYXD2TQ

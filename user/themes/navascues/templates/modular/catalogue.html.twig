@@ -1,8 +1,16 @@
 <div class="section">
 	{{ page.content}}
     
-        <h1>{{ page.header.title }}</h1>
-        <p>{{ page.header.description }}</p>
-        <a href="{{(header.downloadFile|first).path}}" download="">Download</a>
+    <h1>{{ page.header.title }}</h1>
+    <p>{{ page.header.description }}</p>
+    
+    {% if grav.language.getActive == 'es' %}
+      <a href="{{(header.downloadFile|first).path}}" download="">Descargar Catalogo</a>
+    {% endif %}
+
+    {% if grav.language.getActive == 'en' %}
+      <a href="{{(header.downloadFile|first).path}}" download="">Download Catalogue</a>
+    {% endif %}
+
         
 </div>

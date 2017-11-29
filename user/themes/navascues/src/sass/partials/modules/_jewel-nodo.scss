@@ -1,0 +1,17 @@
+.holder {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        display: inline-block;
+    }
+}
+
+.jewel-list-item {
+    display: inline-block;
+    width: 30%;
+
+    img {
+        width: 100%;
+    }
+}

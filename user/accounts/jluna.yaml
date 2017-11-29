@@ -1,0 +1,31 @@
+state: enabled
+email: jordannjord@gmail.com
+fullname: 'Jordan Luna'
+title: administrador
+language: en
+twofa_enabled: false
+twofa_secret: 6G7XX5HVDAY3427QS3ZQH6DZNBOSJFZZ
+access:
+  admin:
+    super: 'true'
+    login: 'true'
+    cache: 'true'
+    configuration: 'true'
+    configuration_system: 'true'
+    configuration_site: 'true'
+    configuration_media: 'true'
+    configuration_info: 'true'
+    settings: 'true'
+    pages: 'true'
+    maintenance: 'true'
+    statistics: 'true'
+    plugins: 'true'
+    themes: 'true'
+    users: 'true'
+  admin-addon-user-manager:
+    users: 'true'
+    groups: 'true'
+    users_expert: 'true'
+hashed_password: $2y$10$TgLJ.wd70aSyH2CKJ881l.ZK.Qjz1qllq94yl/izAcZjGMgu..lI2
+groups:
+  - administrators

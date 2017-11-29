@@ -1,0 +1,16 @@
+.langswitcher {
+    float: right;
+    padding: 29px 10px 0 0;
+    display: inline-block;
+}
+
+.langswitcher li {
+    display: inline-block;
+    margin-left: 0.5rem;
+    line-height: 1rem;
+}
+
+.langswitcher .active {
+    font-weight: bold;
+    text-decoration: underline;
+}
